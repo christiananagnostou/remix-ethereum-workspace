@@ -5,34 +5,33 @@ contract WorkingWithVariables {
     bool public myBool;
     uint8 public myUint8;
     address public myAddress;
-    string public myString = 'Hello World';
-      
-    function setMyUint(uint _num) public {
+    string public myString = "Hello World";
+
+    function setMyUint(uint256 _num) public {
         myUint = _num;
     }
-    
-    function setMyBool (bool _bool) public {
+
+    function setMyBool(bool _bool) public {
         myBool = _bool;
     }
-    
+
     function incrementUint() public {
         myUint8++;
     }
-    
+
     function decrement() public {
         myUint8--;
     }
-    
+
     function setAddress(address _address) public {
         myAddress = _address;
     }
-    
-    function getBalanceOfAddress () public view returns(uint){
+
+    function getBalanceOfAddress() public view returns (uint256) {
         return myAddress.balance;
     }
-    
-    
-    function setMyString (string memory _myString) public {
+
+    function setMyString(string memory _myString) public {
         myString = _myString;
     }
 }
